@@ -123,7 +123,8 @@ p { margin: 12px 0; }
 
 .hero { padding: 32px 0 8px; }
 
-.hero-mark { width: 96px; height: 96px; margin-bottom: 20px; }
+.lockup { display: flex; align-items: center; gap: 16px; }
+.lockup-mark { width: clamp(60px, 14vw, 84px); height: clamp(60px, 14vw, 84px); flex: none; }
 
 .promises {
   display: grid;
@@ -199,3 +200,29 @@ footer.site {
 
 footer.site a { color: var(--muted); }
 footer.site p { margin: 6px 0; }
+
+.link-card {
+  display: block;
+  text-decoration: none;
+  color: var(--ink);
+  margin: 0 0 32px;
+}
+.link-card h3 { color: var(--ink); }
+.link-card h3::after { content: " \203A"; color: var(--brass-text); }
+.link-card:hover { border-color: var(--brass); color: var(--ink); }
+
+.faith-section h2 { margin-top: 36px; }
+.verse {
+  margin: 12px 0;
+  padding: 2px 0 2px 16px;
+  border-left: 3px solid var(--brass);
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--navy-text);
+}
+.verse p { margin: 0; font-size: 18px; }
+.verse cite { display: block; margin-top: 4px; font-style: normal; font-family: var(--sans); font-size: 14px; color: var(--muted); }
+.notice.prayer .eyebrow { color: var(--brass); }
+.prayer-text { font-family: var(--serif); font-size: 21px; line-height: 1.5; margin: 0; }
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
