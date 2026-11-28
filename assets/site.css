@@ -228,3 +228,14 @@ footer.site p { margin: 6px 0; }
 .small { font-size: 14px; }
 .hero-eyebrow { margin: 18px 0 0; }
 .closing { font-family: var(--serif); font-weight: 600; font-size: 19px; line-height: 1.5; }
+
+.preview { margin: 24px auto 8px; max-width: 300px; }
+.preview video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 886 / 1920;
+  border-radius: 28px;
+  background: var(--navy);
+}
+.preview figcaption { margin-top: 10px; text-align: center; color: var(--muted); font-size: 15px; }

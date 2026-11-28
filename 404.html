@@ -31,6 +31,21 @@
       <p class="eyebrow hero-eyebrow">A free app for iPhone</p>
       <p class="lead">Break a habit with daily prayer and methods grounded in research. One habit at a time, one day at a time.</p>
     </section>
+    <figure class="preview">
+      <video muted loop playsinline controls preload="metadata" poster="/assets/app-preview-poster.jpg" aria-label="A 30-second look at Way of Escape: daily prayer, catching a habit, riding out an urge, slow breathing, grace after a slip, and progress">
+        <source src="/assets/app-preview.mp4" type="video/mp4">
+      </video>
+      <figcaption>A 30-second look at the app</figcaption>
+    </figure>
+    <script>
+      (function () {
+        var v = document.querySelector('.preview video');
+        if (!v || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        v.controls = false;
+        var p = v.play();
+        if (p && p.catch) p.catch(function () { v.controls = true; });
+      })();
+    </script>
     <ul class="promises">
       <li class="card"><h3>Start and end each day in prayer</h3><p>A prayer at each end of your day, and clear steps in between.</p></li>
       <li class="card"><h3>Use methods backed by research</h3><p>If–then plans, trigger removal, urge surfing and more.</p></li>
