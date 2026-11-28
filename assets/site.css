@@ -239,3 +239,13 @@ footer.site p { margin: 6px 0; }
   background: var(--navy);
 }
 .preview figcaption { margin-top: 10px; text-align: center; color: var(--muted); font-size: 15px; }
+
+.next-box {
+  margin: 32px 0 8px;
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--brass) 14%, var(--surface));
+  border: 1px solid var(--brass);
+}
+.next-box h2 { margin: 0 0 6px; color: var(--brass-text); }
+.next-box p { margin: 0; }
